@@ -495,6 +495,7 @@ img {
 
 .form-footer {
     display: flex;
+    gap: 24px;
 }
 
 .form-input-footer {
