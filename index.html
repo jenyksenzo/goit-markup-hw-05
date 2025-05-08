@@ -490,13 +490,13 @@
         <p class="parag-form">Leave your contacts and we will call you back</p>
         <form class="forma">
           <div class="full-input-container">
-            <label for="#user-name" class="label-form">Name</label>
+            <label for="user-name" class="label-form">Name</label>
             <div class="input-container">
               <input
                 type="text"
                 name="user-name"
                 id="user-name"
-                class="input-form"
+                class="input-form input-only"
               />
               <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-username"></use>
@@ -504,25 +504,35 @@
             </div>
           </div>
           <div>
-            <label for="#tel" class="label-form">Phone</label>
+            <label for="tel" class="label-form">Phone</label>
             <div class="input-container">
-              <input type="tel" name="phone" id="tel" class="input-form" />
+              <input
+                type="tel"
+                name="phone"
+                id="tel"
+                class="input-form input-only"
+              />
               <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg>
             </div>
           </div>
           <div>
-            <label for="#email" class="label-form">Email</label>
+            <label for="email" class="label-form">Email</label>
             <div class="input-container">
-              <input type="email" name="email" id="email" class="input-form" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input-form input-only"
+              />
               <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
             </div>
           </div>
           <div class="textarea-container">
-            <label for="#user-comment" class="label-form">Comment</label>
+            <label for="user-comment" class="label-form">Comment</label>
             <textarea
               name="user-comment"
               id="user-comment"
@@ -532,16 +542,25 @@
             >
             </textarea>
           </div>
-          <div>
-            <input type="checkbox" id="checkbox-form" />
-            <label for="checkbox-form" class="label-form-check">
-              <span class="custom-box"></span>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              class="checkbox-form visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="label-form-check">
+              <span class="custom-box">
+                <svg class="tick-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-tick"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
               <a href="" class="check-link">Privacy Policy</a>
             </label>
           </div>
+          <button class="btn-form" type="submit">Send</button>
         </form>
-        <button class="btn-form" type="submit">Send</button>
       </div>
     </div>
   </body>
