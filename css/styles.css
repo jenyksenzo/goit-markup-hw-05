@@ -626,7 +626,6 @@ img {
 
 .forma {
     margin-top: 16px;
-    padding: 0 24px 24px 24px;
 }
 
 .full-input-container {
@@ -763,9 +762,10 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    border-radius: 2px;
 }
 
-.visually-hidden:checked .tick-icon {
+.checkbox-form:checked span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
