@@ -480,7 +480,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="cross-button" type="button">
           <svg class="cross-icon" width="8" height="8">
@@ -489,13 +489,13 @@
         </button>
         <p class="parag-form">Leave your contacts and we will call you back</p>
         <form class="forma">
-          <div>
-            <label for="#username" class="label-form">Name</label>
+          <div class="full-input-container">
+            <label for="#user-name" class="label-form">Name</label>
             <div class="input-container">
               <input
                 type="text"
-                name="username"
-                id="username"
+                name="user-name"
+                id="user-name"
                 class="input-form"
               />
               <svg class="form-icon" width="18" height="24">
@@ -521,18 +521,16 @@
               </svg>
             </div>
           </div>
-          <div>
-            <label for="#info" class="label-form">Comment</label>
-            <div>
-              <textarea
-                name="info"
-                id="info"
-                placeholder="Text input"
-                rows="4"
-                class="input-form comment-input"
-              >
-              </textarea>
-            </div>
+          <div class="textarea-container">
+            <label for="#user-comment" class="label-form">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              rows="4"
+              class="input-form comment-input"
+            >
+            </textarea>
           </div>
           <div>
             <input type="checkbox" id="checkbox-form" />
