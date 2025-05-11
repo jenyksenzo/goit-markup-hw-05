@@ -774,7 +774,7 @@ textarea::placeholder {
     border-radius: 2px;
 }
 
-.checkbox-form:checked span {
+.checkbox-form:checked + .label-form-check span {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
